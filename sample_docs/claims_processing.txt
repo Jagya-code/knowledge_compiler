@@ -1,0 +1,45 @@
+CLAIMS PROCESSING SYSTEM
+
+Overview
+
+The claims processing system manages the full lifecycle of an insurance claim from first notice of loss (FNOL) through settlement and closure. Efficient claims handling directly impacts customer satisfaction and the company's combined ratio.
+
+FIRST NOTICE OF LOSS
+
+Claims Processing
+
+When a policyholder experiences a loss, they initiate a claim via phone, mobile app, or online portal. The FNOL intake team captures incident details, policy information, and initial damage assessment. A claim number is assigned and the claim is routed to the appropriate adjuster based on claim type, geographic location, and complexity.
+
+Claims Triage and Assignment
+
+Incoming claims are triaged by severity and type. Minor property claims below a defined threshold are eligible for fast-track settlement with automated payment. Complex or high-value claims require field adjuster assignment and an independent damage appraisal.
+
+CLAIMS INVESTIGATION
+
+Investigation Process
+
+Adjusters conduct thorough investigations to verify coverage, establish liability, and quantify the loss. Investigation activities include site inspections, witness interviews, review of police or medical reports, and consultation with specialist vendors. Investigation findings are documented in the claims management system.
+
+Liability Assessment
+
+Liability assessment determines the extent to which the insurer is obligated to pay. For liability claims, comparative negligence rules are applied. For property claims, policy deductibles and coverage sub-limits are factored into the settlement calculation.
+
+SETTLEMENT AND PAYMENT
+
+Settlement Negotiation
+
+Once the investigation is complete, the adjuster presents a settlement offer to the claimant. Settlement negotiations may involve legal representation on either side for large or disputed claims. All settlement decisions above a defined authority limit require supervisory approval.
+
+Claims Payment
+
+Approved settlements are processed through the claims payment system. Payment methods include direct deposit, check issuance, and direct vendor payment for repair services. Payment timelines are subject to state-mandated prompt payment statutes.
+
+CLAIMS CLOSURE
+
+A claim is closed once all payments have been made and no further action is anticipated. Closed claims are subject to audit and reserve adequacy review. Reopened claims are tracked separately and flagged for management attention.
+
+SUBROGATION
+
+Subrogation Process
+
+After settling a claim, the insurer may pursue recovery from third parties responsible for the loss. The subrogation team identifies recovery opportunities, engages legal counsel where necessary, and tracks recovery proceeds against the original claim payment.

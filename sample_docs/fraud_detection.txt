@@ -1,0 +1,45 @@
+FRAUD DETECTION AND RISK SCORING
+
+Introduction
+
+Insurance fraud costs the industry billions annually and directly increases premiums for honest policyholders. This document describes the company's approach to fraud detection, risk scoring, and investigation across the policy and claims lifecycle.
+
+FRAUD TYPOLOGY
+
+Fraud Detection Overview
+
+Insurance fraud is classified into three main categories: opportunistic fraud (exaggerated legitimate claims), organised fraud (staged accidents, ghost policies), and internal fraud (employee misconduct). Each category requires distinct detection strategies and investigation protocols.
+
+Common Fraud Indicators
+
+Red flags for claims fraud include inconsistencies in the incident narrative, claims filed shortly after policy inception, prior claims history with multiple insurers, and unusually high loss amounts relative to policy value. For application fraud, key indicators include misrepresentation of address, occupation, or prior loss history.
+
+FRAUD RISK SCORING
+
+Risk Scoring Model
+
+Each claim is assigned a fraud risk score at intake using a combination of rules-based logic and machine learning models. The risk score draws on historical claims data, third-party data enrichment sources, geospatial analytics, and behavioural signals. Claims exceeding a defined score threshold are routed to the Special Investigations Unit (SIU).
+
+Model Governance
+
+Fraud models are reviewed quarterly by the model risk team. Model performance metrics including precision, recall, and false positive rate are tracked against defined thresholds. Significant model drift triggers a formal model refresh cycle.
+
+SPECIAL INVESTIGATIONS UNIT
+
+SIU Investigation Process
+
+SIU investigators conduct in-depth reviews of flagged claims. Investigation tools include recorded statement analysis, social media monitoring, surveillance, and collaboration with law enforcement. SIU cases are managed in a dedicated case management system with strict access controls.
+
+Fraud Referral and Prosecution
+
+Confirmed fraud cases are referred to the appropriate state insurance fraud bureau and, where warranted, to law enforcement for criminal prosecution. Civil recovery actions may also be pursued. All referrals are logged and tracked for regulatory reporting purposes.
+
+FRAUD PREVENTION AT UNDERWRITING
+
+Underwriting Fraud Controls
+
+Application fraud is addressed through automated verification of applicant-provided data against authoritative third-party sources including motor vehicle records, property databases, and credit bureaux. High-risk applications trigger enhanced due diligence workflows.
+
+REPORTING AND ANALYTICS
+
+Fraud losses and recovery rates are reported monthly to senior management and the board risk committee. Analytics dashboards provide real-time visibility into emerging fraud patterns by claim type, geography, and distribution channel.

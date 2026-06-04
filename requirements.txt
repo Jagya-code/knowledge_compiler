@@ -1,0 +1,20 @@
+# ── Core LLM client ───────────────────────────────────────────────────────────
+openai>=1.30.0
+
+# ── Document ingestion ────────────────────────────────────────────────────────
+pdfplumber>=0.10.0          # PDF parsing
+python-docx>=1.1.0          # DOCX parsing
+
+# ── Optional: Excel guidance files ───────────────────────────────────────────
+openpyxl>=3.1.0
+
+# ── Database ──────────────────────────────────────────────────────────────────
+psycopg2-binary>=2.9.9      # PostgreSQL driver (binary = no build deps needed)
+
+# ── Embeddings ────────────────────────────────────────────────────────────────
+sentence-transformers>=3.0.0   # all-MiniLM-L6-v2 embeddings
+torch>=2.0.0                   # required backend for sentence-transformers
+numpy>=1.26.0                  # vector operations
+
+# ── Utilities ─────────────────────────────────────────────────────────────────
+pathlib2>=2.3.7; python_version < "3.4"

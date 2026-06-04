@@ -1,0 +1,27 @@
+CUSTOMER ONBOARDING AND KYC
+
+Introduction
+
+Customer onboarding is the process of establishing a new policyholder relationship in compliance with regulatory requirements and company standards. This document covers identity verification, Know Your Customer (KYC) obligations, and the digital onboarding experience.
+
+CUSTOMER KYC
+
+KYC Requirements
+
+All new customers must be verified against government-issued identity documents. KYC checks include identity verification, sanctions screening, politically exposed person (PEP) checks, and adverse media screening. Enhanced due diligence applies to high-risk customer segments including high net worth individuals and commercial customers above defined revenue thresholds.
+
+Digital Identity Verification
+
+The company employs an automated digital identity verification platform that validates identity documents using optical character recognition (OCR) and liveness detection. Results are returned within seconds, enabling real-time onboarding decisions for standard customers.
+
+CUSTOMER DATA MANAGEMENT
+
+Customer data collected during onboarding is stored in the centralised CRM system and shared with the policy administration and claims platforms via secure APIs. Data quality checks are applied at point of capture to minimise downstream data integrity issues.
+
+CUSTOMER ONBOARDING JOURNEY
+
+The standard digital onboarding journey comprises five steps: quote generation, application submission, KYC verification, payment setup, and policy issuance. Average completion time for digital onboarding is under 10 minutes. Drop-off analytics are monitored to identify friction points in the journey.
+
+Welcome and Activation
+
+New customers receive a welcome communication pack including their policy schedule, key terms summary, and digital access credentials. First-year engagement is supported by a structured onboarding email programme and proactive contact from the customer service team.

@@ -1,0 +1,118 @@
+[
+  {
+    "topic_name": "Compliance",
+    "topic_description": "Compliance encompasses key regulatory and governance processes within insurance operations.",
+    "sub_topics": [
+      {
+        "sub_topic_name": "Compliance Programme",
+        "sub_topic_description": "Covers reporting, analytics, and compliance programme activities."
+      },
+      {
+        "sub_topic_name": "Regulatory Framework",
+        "sub_topic_description": ""
+      },
+      {
+        "sub_topic_name": "Solvency & Capital",
+        "sub_topic_description": "Focuses on capital adequacy and solvency oversight."
+      }
+    ]
+  },
+  {
+    "topic_name": "Customer Management",
+    "topic_description": "Customer Management handles onboarding, KYC, and customer data processes.",
+    "sub_topics": [
+      {
+        "sub_topic_name": "Customer Data Management",
+        "sub_topic_description": "Manages storage and protection of customer data."
+      },
+      {
+        "sub_topic_name": "Customer Onboarding",
+        "sub_topic_description": ""
+      },
+      {
+        "sub_topic_name": "Digital Identity Verification",
+        "sub_topic_description": "Supports KYC and digital identity verification processes."
+      }
+    ]
+  },
+  {
+    "topic_name": "General Operations",
+    "topic_description": "General operational activities related to insurance products.",
+    "sub_topics": [
+      {
+        "sub_topic_name": "Miscellaneous",
+        "sub_topic_description": ""
+      }
+    ]
+  },
+  {
+    "topic_name": "Operations",
+    "topic_description": "Operations manages claims processing, settlement, fraud detection, and recovery activities.",
+    "sub_topics": [
+      {
+        "sub_topic_name": "Claims Management",
+        "sub_topic_description": ""
+      },
+      {
+        "sub_topic_name": "Claims Investigation",
+        "sub_topic_description": "Focuses on fraud detection, SIU investigations, and risk scoring."
+      },
+      {
+        "sub_topic_name": "Claims Settlement",
+        "sub_topic_description": "Manages claims processing, payments, and settlements."
+      },
+      {
+        "sub_topic_name": "Operations",
+        "sub_topic_description": "Handles claims closure activities."
+      },
+      {
+        "sub_topic_name": "Subrogation",
+        "sub_topic_description": "Supports recovery from liable third parties after claim settlement."
+      }
+    ]
+  },
+  {
+    "topic_name": "Policy Lifecycle",
+    "topic_description": "Policy Lifecycle covers underwriting, issuance, amendments, and termination processes.",
+    "sub_topics": [
+      {
+        "sub_topic_name": "Policy Amendments",
+        "sub_topic_description": "Handles policy endorsements and amendments."
+      },
+      {
+        "sub_topic_name": "Policy Lifecycle",
+        "sub_topic_description": "Covers onboarding journey and underwriting fraud prevention."
+      },
+      {
+        "sub_topic_name": "Policy Issuance",
+        "sub_topic_description": "Manages customer onboarding journey and policy issuance."
+      },
+      {
+        "sub_topic_name": "Underwriting",
+        "sub_topic_description": "Focuses on underwriting controls and fraud prevention."
+      },
+      {
+        "sub_topic_name": "Policy Termination",
+        "sub_topic_description": "Handles policy termination and lifecycle completion."
+      }
+    ]
+  },
+  {
+    "topic_name": "Product Management",
+    "topic_description": "",
+    "sub_topics": [
+      {
+        "sub_topic_name": "Commercial Lines",
+        "sub_topic_description": "Manages commercial insurance product categories."
+      },
+      {
+        "sub_topic_name": "Commercial Property",
+        "sub_topic_description": "Handles KYC and commercial property insurance products."
+      },
+      {
+        "sub_topic_name": "Product Development",
+        "sub_topic_description": ""
+      }
+    ]
+  }
+]

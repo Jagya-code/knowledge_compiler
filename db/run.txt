@@ -1,0 +1,37 @@
+python db/retriever.py --path "Operations > Claims Management"    
+python retriever.py --semantic "how is fraud detected?"
+python retriever.py --traverse "Claims Processing"
+
+guided_tree copy
+├── .env
+├── canonicaliser.py
+├── chunking.py
+├── db
+│   ├── loader.py
+│   ├── retriever.py
+│   ├── run.txt
+│   └── schema.sql
+├── demo.py
+├── hierarchy_builder.py
+├── ingestion.py
+├── input
+│   └── input_config.json
+├── main.py
+├── mock_llm.py
+├── output
+│   ├── chunks.json
+│   ├── output_hierarchy.json
+│   └── pruned_knowledge_map.json
+├── requirements.txt
+├── run_schema.py
+├── sample_docs
+│   ├── claims_processing.txt
+│   ├── customer_onboarding.txt
+│   ├── fraud_detection.txt
+│   ├── policy_lifecycle.txt
+│   ├── product_catalog.txt
+│   └── regulatory_compliance.txt
+├── streamlit_app.py
+├── summarizer.py
+├── topic_extractor.py
+├── tree_generator.py

@@ -1,0 +1,498 @@
+[
+  {
+    "chunk_id": "chunk_0001",
+    "doc_id": "doc_001",
+    "filename": "claims_processing.txt",
+    "heading": "CLAIMS PROCESSING SYSTEM",
+    "text": "Overview\n\nThe claims processing system manages the full lifecycle of an insurance claim from first notice of loss (FNOL) through settlement and closure. Efficient claims handling directly impacts customer satisfaction and the company's combined ratio.",
+    "page_approx": 1,
+    "summary": "The claims processing system oversees the entire lifecycle of an insurance claim, from initial reporting (FNOL) to settlement and closure, aiming to enhance customer satisfaction and optimize the company's financial performance.",
+    "topics": [],
+    "path": [
+      "Operations",
+      "Claims Management",
+      "Claims Processing"
+    ],
+    "keywords": [
+      "First Notice of Loss",
+      "Settlement",
+      "Case Closure",
+      "Customer Experience"
+    ]
+  },
+  {
+    "chunk_id": "chunk_0018",
+    "doc_id": "doc_004",
+    "filename": "policy_lifecycle.txt",
+    "heading": "POLICY ORIGINATION",
+    "text": "Policy origination encompasses the activities required to bring a new policy into force. This begins when a prospective customer submits an application, either through an agent, broker, or digital self-service portal. The origination team collects applicant information including personal details, risk exposure, and prior coverage history.\n\nUnderwriting Rules\n\nUnderwriting rules define the criteria by which an application is accepted, modified, or declined. Rules are calibrated to the company's risk appetite and updated quarterly based on loss experience. Key underwriting factors include applicant age, prior claims history, geographic location, and asset value. Automated underwriting engines process the majority of standard applications within minutes, while complex or high-value policies are routed to senior underwriters for manual review.\n\nPolicy Issuance\n\nUpon underwriting approval, the policy document is generated and issued to the policyholder. The issuance process includes premium calculation, payment schedule setup, and document delivery. All issued policies are registered in the core policy administration system with a unique policy number and effective date.",
+    "page_approx": 2,
+    "summary": "The \"Policy Origination\" section outlines the process of creating new insurance policies, detailing steps from application submission to underwriting evaluation and issuance, highlighting both automated and manual procedures based on risk factors and complexity.",
+    "topics": [],
+    "path": [
+      "Policy Lifecycle",
+      "Policy Origination",
+      "Underwriting & Issuance"
+    ],
+    "keywords": [
+      "Application Submission",
+      "Underwriting Evaluation",
+      "Automated and Manual Procedures",
+      "Policy Issuance"
+    ]
+  },
+  {
+    "chunk_id": "chunk_0022",
+    "doc_id": "doc_005",
+    "filename": "product_catalog.txt",
+    "heading": "INSURANCE PRODUCT CATALOG",
+    "text": "Introduction\n\nThis document provides an overview of the company's insurance product portfolio, including product lines, coverage structures, and target market segments.",
+    "page_approx": 1,
+    "summary": "The \"Insurance Product Catalog\" outlines the company's insurance offerings, detailing product lines, coverage frameworks, and intended market segments.",
+    "topics": [],
+    "path": [
+      "Product Management",
+      "Product Catalog",
+      "Coverage Frameworks & Market Segments"
+    ],
+    "keywords": [
+      "Product Lines",
+      "Coverage Frameworks",
+      "Market Segments",
+      "Insurance Offerings"
+    ]
+  },
+  {
+    "chunk_id": "chunk_0005",
+    "doc_id": "doc_001",
+    "filename": "claims_processing.txt",
+    "heading": "CLAIMS CLOSURE",
+    "text": "A claim is closed once all payments have been made and no further action is anticipated. Closed claims are subject to audit and reserve adequacy review. Reopened claims are tracked separately and flagged for management attention.",
+    "page_approx": 5,
+    "summary": "The Claims Closure process finalizes claims after all payments are made and no further actions are expected, with closed claims monitored for audits and reserve adequacy, while reopened claims are tracked and highlighted for management review.",
+    "topics": [],
+    "path": [
+      "Operations",
+      "Claims Processing",
+      "Claims Closure"
+    ],
+    "keywords": [
+      "Claims Closure",
+      "Payments Finalization",
+      "Audit & Reserve Monitoring",
+      "Reopened Claims Tracking"
+    ]
+  },
+  {
+    "chunk_id": "chunk_0019",
+    "doc_id": "doc_004",
+    "filename": "policy_lifecycle.txt",
+    "heading": "POLICY RENEWAL",
+    "text": "Policy Renewal Process\n\nRenewal notices are generated automatically 60 days before policy expiration. The renewal workflow re-evaluates risk factors, adjusts premiums based on updated loss models, and applies any mandatory regulatory changes. Policyholders who have had claims during the policy period are subject to enhanced review.\n\nRenewal Retention Strategies\n\nThe retention team employs multiple strategies to minimise lapse rates at renewal. These include loyalty discounts, bundling incentives, and proactive outreach to at-risk policyholders. Analytics models identify customers with high lapse probability based on payment behaviour, engagement scores, and competitor pricing signals.",
+    "page_approx": 3,
+    "summary": "The text outlines the policy renewal process, including risk reassessment and premium adjustments, alongside retention strategies like loyalty discounts and predictive analytics to minimize lapse rates and improve customer retention.",
+    "topics": [],
+    "path": [
+      "Policy Lifecycle",
+      "Policy Renewal",
+      "Renewal Process",
+      "Retention Strategies and Pricing Analytics"
+    ],
+    "keywords": [
+      "Policy Renewal",
+      "Risk Reassessment",
+      "Premium Adjustment",
+      "Retention Analytics"
+    ]
+  },
+  {
+    "chunk_id": "chunk_0027",
+    "doc_id": "doc_006",
+    "filename": "regulatory_compliance.txt",
+    "heading": "COMPLIANCE PROGRAMME",
+    "text": "Compliance Monitoring\n\nThe compliance function conducts ongoing monitoring of business processes against regulatory requirements and internal policies. Monitoring activities include transaction testing, policy file reviews, and mystery shopping of sales and service channels.\n\nRegulatory Reporting\n\nThe company files a comprehensive suite of regulatory reports including annual statutory financial statements, quarterly financial data calls, and ad hoc market conduct filings. Regulatory reporting deadlines are tracked in the compliance calendar and reviewed monthly.",
+    "page_approx": 3,
+    "summary": "The compliance program ensures adherence to regulations and internal policies through activities like monitoring business processes and mystery shopping, while maintaining regulatory reporting via a structured schedule tracked in a compliance calendar.",
+    "topics": [],
+    "path": [
+      "Compliance",
+      "Compliance Management",
+      "Monitoring & Assurance",
+      "Regulatory Reporting & Scheduling"
+    ],
+    "keywords": [
+      "Monitoring",
+      "Mystery Shopping",
+      "Regulatory Reporting",
+      "Compliance Calendar"
+    ]
+  },
+  {
+    "chunk_id": "chunk_0020",
+    "doc_id": "doc_004",
+    "filename": "policy_lifecycle.txt",
+    "heading": "POLICY AMENDMENTS AND ENDORSEMENTS",
+    "text": "Mid-term amendments allow policyholders to modify coverage, add endorsements, or change payment methods. All amendments trigger a re-rating process and generate a revised premium statement. Endorsements are tracked as addenda to the original policy record.",
+    "page_approx": 4,
+    "summary": "This section outlines that policyholders can make mid-term amendments to modify coverage, add endorsements, or change payment methods, which necessitates re-rating and a revised premium statement, with endorsements documented as addenda to the original policy.",
+    "topics": [],
+    "path": [
+      "Policy Lifecycle",
+      "Policy Amendments",
+      "Endorsements"
+    ],
+    "keywords": [
+      "Mid-term amendments",
+      "Endorsements",
+      "Re-rating",
+      "Addenda"
+    ]
+  },
+  {
+    "chunk_id": "chunk_0025",
+    "doc_id": "doc_006",
+    "filename": "regulatory_compliance.txt",
+    "heading": "REGULATORY AND COMPLIANCE GUIDELINES",
+    "text": "Overview\n\nInsurance is a heavily regulated industry. This document summarises the key regulatory frameworks applicable to the company's operations and the internal compliance programme designed to ensure adherence.",
+    "page_approx": 1,
+    "summary": "The section outlines key regulatory frameworks governing the insurance industry and details the company's internal compliance program to ensure regulatory adherence.",
+    "topics": [],
+    "path": [
+      "Compliance",
+      "Regulatory Frameworks",
+      "Internal Compliance Program"
+    ],
+    "keywords": [
+      "Regulatory Frameworks",
+      "Internal Compliance Program",
+      "Regulatory Adherence",
+      "Insurance Regulations"
+    ]
+  },
+  {
+    "chunk_id": "chunk_0028",
+    "doc_id": "doc_006",
+    "filename": "regulatory_compliance.txt",
+    "heading": "CONSUMER PROTECTION",
+    "text": "Consumer protection regulations require fair treatment of customers across the policy lifecycle including transparent product disclosure, fair claims handling, and accessible dispute resolution processes. The company maintains a dedicated customer relations team to handle complaints and regulatory inquiries.\n\nData Privacy and Security\n\nThe company complies with applicable data privacy regulations including state consumer privacy laws. A formal data governance programme governs data collection, retention, access controls, and breach response. Annual privacy training is mandatory for all employees handling customer data.",
+    "page_approx": 4,
+    "summary": "The document outlines the company's adherence to consumer protection regulations and data privacy laws, emphasizing transparent product practices, fair claims handling, accessible dispute resolution, and robust data governance with mandatory employee privacy training.",
+    "topics": [],
+    "path": [
+      "Compliance",
+      "Consumer Protection and Privacy",
+      "Data Governance and Privacy Training",
+      "Claims Handling and Dispute Resolution"
+    ],
+    "keywords": [
+      "Consumer protection",
+      "Data privacy",
+      "Privacy training",
+      "Dispute resolution"
+    ]
+  },
+  {
+    "chunk_id": "chunk_0014",
+    "doc_id": "doc_003",
+    "filename": "fraud_detection.txt",
+    "heading": "SPECIAL INVESTIGATIONS UNIT",
+    "text": "SIU Investigation Process\n\nSIU investigators conduct in-depth reviews of flagged claims. Investigation tools include recorded statement analysis, social media monitoring, surveillance, and collaboration with law enforcement. SIU cases are managed in a dedicated case management system with strict access controls.\n\nFraud Referral and Prosecution\n\nConfirmed fraud cases are referred to the appropriate state insurance fraud bureau and, where warranted, to law enforcement for criminal prosecution. Civil recovery actions may also be pursued. All referrals are logged and tracked for regulatory reporting purposes.",
+    "page_approx": 4,
+    "summary": "The Special Investigations Unit (SIU) handles flagged insurance claims by conducting thorough investigations using various tools and collaborates with authorities for prosecution or civil recovery, ensuring proper tracking and regulatory compliance.",
+    "topics": [],
+    "path": [
+      "Operations",
+      "Claims Management",
+      "Investigations",
+      "Special Investigations Unit"
+    ],
+    "keywords": [
+      "Special Investigations Unit",
+      "Claims investigations",
+      "Regulatory compliance",
+      "Prosecution collaboration"
+    ]
+  },
+  {
+    "chunk_id": "chunk_0009",
+    "doc_id": "doc_002",
+    "filename": "customer_onboarding.txt",
+    "heading": "CUSTOMER DATA MANAGEMENT",
+    "text": "Customer data collected during onboarding is stored in the centralised CRM system and shared with the policy administration and claims platforms via secure APIs. Data quality checks are applied at point of capture to minimise downstream data integrity issues.",
+    "page_approx": 3,
+    "summary": "The customer data gathered during onboarding is stored in a centralized CRM system, shared securely with policy and claims platforms via APIs, and subjected to quality checks to ensure data integrity.",
+    "topics": [],
+    "path": [
+      "Operations",
+      "Customer Data Management",
+      "CRM Data Storage",
+      "Data Quality and API-Based Sharing"
+    ],
+    "keywords": [
+      "CRM",
+      "Data storage",
+      "API-based sharing",
+      "Data quality"
+    ]
+  },
+  {
+    "chunk_id": "chunk_0010",
+    "doc_id": "doc_002",
+    "filename": "customer_onboarding.txt",
+    "heading": "CUSTOMER ONBOARDING JOURNEY",
+    "text": "The standard digital onboarding journey comprises five steps: quote generation, application submission, KYC verification, payment setup, and policy issuance. Average completion time for digital onboarding is under 10 minutes. Drop-off analytics are monitored to identify friction points in the journey.\n\nWelcome and Activation\n\nNew customers receive a welcome communication pack including their policy schedule, key terms summary, and digital access credentials. First-year engagement is supported by a structured onboarding email programme and proactive contact from the customer service team.",
+    "page_approx": 4,
+    "summary": "The document outlines the digital onboarding process for insurance customers, detailing its five steps, average completion time, and strategies like welcome communication packs and proactive engagement to enhance first-year customer experience.",
+    "topics": [],
+    "path": [
+      "Operations",
+      "Customer Onboarding",
+      "Digital Onboarding"
+    ],
+    "keywords": [
+      "Digital Onboarding",
+      "Onboarding Process",
+      "Welcome Communications",
+      "First-Year Experience"
+    ]
+  },
+  {
+    "chunk_id": "chunk_0021",
+    "doc_id": "doc_004",
+    "filename": "policy_lifecycle.txt",
+    "heading": "POLICY TERMINATION",
+    "text": "Policies may be terminated by the insurer for non-payment, material misrepresentation, or at the policyholder's request. The termination process includes calculation of any unearned premium refund, notification to lienholders, and update of the policy administration system. Terminated policies are archived and retained per regulatory requirements.",
+    "page_approx": 5,
+    "summary": "The \"POLICY TERMINATION\" section outlines the conditions and procedures for ending an insurance policy, including refund calculation, notifying lienholders, system updates, and regulatory-compliant archiving.",
+    "topics": [],
+    "path": [
+      "Operations",
+      "Policy Lifecycle",
+      "Policy Termination",
+      "Refunds, Notices & Archiving"
+    ],
+    "keywords": [
+      "Policy Termination",
+      "Refund Calculation",
+      "Lienholder Notification",
+      "Archiving & Compliance"
+    ]
+  },
+  {
+    "chunk_id": "chunk_0024",
+    "doc_id": "doc_005",
+    "filename": "product_catalog.txt",
+    "heading": "COMMERCIAL LINES PRODUCTS",
+    "text": "Commercial Property Insurance\n\nCommercial property products cover buildings, plant, machinery, and stock for businesses ranging from small retailers to large industrial operations. Policy structures include standard perils, all-risks, and business interruption extensions.\n\nProduct Development Process\n\nNew products and product modifications follow a structured development process including market research, actuarial pricing, regulatory review, and systems implementation. Product approval requires sign-off from the Chief Underwriting Officer and Legal & Compliance teams.",
+    "page_approx": 3,
+    "summary": "The section outlines commercial property insurance offerings that protect business assets and the structured process for developing and modifying insurance products, requiring approval from key stakeholders to ensure compliance and market suitability.",
+    "topics": [],
+    "path": [
+      "Product Management",
+      "Commercial Lines Insurance",
+      "Product Development and Approval"
+    ],
+    "keywords": [
+      "commercial lines",
+      "product development",
+      "approval process",
+      "compliance"
+    ]
+  },
+  {
+    "chunk_id": "chunk_0026",
+    "doc_id": "doc_006",
+    "filename": "regulatory_compliance.txt",
+    "heading": "REGULATORY FRAMEWORK",
+    "text": "Key Regulatory Bodies\n\nThe company operates under the oversight of state insurance departments in each jurisdiction where it writes business. Federal oversight applies to certain aspects of employee benefit plans under ERISA. International operations are subject to local regulatory regimes.\n\nSolvency and Capital Requirements\n\nThe company is required to maintain minimum capital and surplus levels as defined by regulatory authorities. Internal capital models are used to assess economic capital requirements in excess of regulatory minimums. Solvency results are reported quarterly to the board and annually to regulators.",
+    "page_approx": 2,
+    "summary": "The document outlines the regulatory framework governing the company, including oversight by state, federal, and international regulators, as well as solvency and capital requirements monitored through internal models and reported periodically to stakeholders.",
+    "topics": [],
+    "path": [
+      "Compliance",
+      "Regulatory Framework",
+      "Regulatory Oversight",
+      "Internal Models & Stakeholder Reporting"
+    ],
+    "keywords": [
+      "Regulatory Oversight",
+      "Solvency",
+      "Capital Requirements",
+      "Internal Models"
+    ]
+  },
+  {
+    "chunk_id": "chunk_0017",
+    "doc_id": "doc_004",
+    "filename": "policy_lifecycle.txt",
+    "heading": "POLICY LIFECYCLE MANAGEMENT",
+    "text": "Introduction\n\nThis document outlines the end-to-end lifecycle of an insurance policy from initial application through renewal and termination. Effective policy lifecycle management is critical to maintaining profitability, customer satisfaction, and regulatory compliance.",
+    "page_approx": 1,
+    "summary": "The document explains the complete lifecycle of an insurance policy, emphasizing the importance of managing its application, renewal, and termination processes to ensure profitability, customer satisfaction, and compliance.",
+    "topics": [],
+    "path": [
+      "Operations",
+      "Policy Administration",
+      "Policy Lifecycle",
+      "Policy Origination, Renewal, and Termination"
+    ],
+    "keywords": [
+      "Policy Origination",
+      "Renewals",
+      "Termination",
+      "Compliance"
+    ]
+  },
+  {
+    "chunk_id": "chunk_0016",
+    "doc_id": "doc_003",
+    "filename": "fraud_detection.txt",
+    "heading": "REPORTING AND ANALYTICS",
+    "text": "Fraud losses and recovery rates are reported monthly to senior management and the board risk committee. Analytics dashboards provide real-time visibility into emerging fraud patterns by claim type, geography, and distribution channel.",
+    "page_approx": 6,
+    "summary": "The \"REPORTING AND ANALYTICS\" section outlines monthly reporting of fraud losses and recovery rates to senior management and the board, while real-time analytics dashboards track emerging fraud patterns by claim type, geography, and channel.",
+    "topics": [],
+    "path": [
+      "Operations",
+      "Fraud Management",
+      "Reporting and Analytics",
+      "Monthly Reporting and Dashboards"
+    ],
+    "keywords": [
+      "fraud losses",
+      "recovery rates",
+      "monthly reporting",
+      "real-time dashboards"
+    ]
+  },
+  {
+    "chunk_id": "chunk_0002",
+    "doc_id": "doc_001",
+    "filename": "claims_processing.txt",
+    "heading": "FIRST NOTICE OF LOSS",
+    "text": "Claims Processing\n\nWhen a policyholder experiences a loss, they initiate a claim via phone, mobile app, or online portal. The FNOL intake team captures incident details, policy information, and initial damage assessment. A claim number is assigned and the claim is routed to the appropriate adjuster based on claim type, geographic location, and complexity.\n\nClaims Triage and Assignment\n\nIncoming claims are triaged by severity and type. Minor property claims below a defined threshold are eligible for fast-track settlement with automated payment. Complex or high-value claims require field adjuster assignment and an independent damage appraisal.",
+    "page_approx": 2,
+    "summary": "The document outlines the process for First Notice of Loss (FNOL) in claims handling, detailing how policyholder incidents are reported, triaged, and assigned to adjusters based on severity, type, and complexity for resolution.",
+    "topics": [],
+    "path": [
+      "Operations",
+      "Claims Management",
+      "Claims Processing",
+      "First Notice of Loss"
+    ],
+    "keywords": [
+      "First Notice of Loss",
+      "claims intake",
+      "triage and routing",
+      "adjuster assignment"
+    ]
+  },
+  {
+    "chunk_id": "chunk_0007",
+    "doc_id": "doc_002",
+    "filename": "customer_onboarding.txt",
+    "heading": "CUSTOMER ONBOARDING AND KYC",
+    "text": "Introduction\n\nCustomer onboarding is the process of establishing a new policyholder relationship in compliance with regulatory requirements and company standards. This document covers identity verification, Know Your Customer (KYC) obligations, and the digital onboarding experience.",
+    "page_approx": 1,
+    "summary": "The document outlines the customer onboarding process for insurance, emphasizing regulatory compliance, identity verification, KYC requirements, and enhancing the digital onboarding experience.",
+    "topics": [],
+    "path": [
+      "Compliance",
+      "Customer Onboarding",
+      "Know Your Customer Practices",
+      "Identity Verification and Digital Onboarding"
+    ],
+    "keywords": [
+      "Onboarding Process",
+      "Know Your Customer",
+      "Identity Verification",
+      "Digital Onboarding"
+    ]
+  },
+  {
+    "chunk_id": "chunk_0004",
+    "doc_id": "doc_001",
+    "filename": "claims_processing.txt",
+    "heading": "SETTLEMENT AND PAYMENT",
+    "text": "Settlement Negotiation\n\nOnce the investigation is complete, the adjuster presents a settlement offer to the claimant. Settlement negotiations may involve legal representation on either side for large or disputed claims. All settlement decisions above a defined authority limit require supervisory approval.\n\nClaims Payment\n\nApproved settlements are processed through the claims payment system. Payment methods include direct deposit, check issuance, and direct vendor payment for repair services. Payment timelines are subject to state-mandated prompt payment statutes.",
+    "page_approx": 4,
+    "summary": "The section outlines the settlement negotiation process, requiring supervisory approval for decisions above certain limits, and details claims payment methods and adherence to state-mandated timelines.",
+    "topics": [],
+    "path": [
+      "Operations",
+      "Claims Management",
+      "Settlement and Payment",
+      "Negotiation and Approvals"
+    ],
+    "keywords": [
+      "Settlement",
+      "Payment Methods",
+      "Supervisory Approval",
+      "Payment Timelines"
+    ]
+  },
+  {
+    "chunk_id": "chunk_0003",
+    "doc_id": "doc_001",
+    "filename": "claims_processing.txt",
+    "heading": "CLAIMS INVESTIGATION",
+    "text": "Investigation Process\n\nAdjusters conduct thorough investigations to verify coverage, establish liability, and quantify the loss. Investigation activities include site inspections, witness interviews, review of police or medical reports, and consultation with specialist vendors. Investigation findings are documented in the claims management system.\n\nLiability Assessment\n\nLiability assessment determines the extent to which the insurer is obligated to pay. For liability claims, comparative negligence rules are applied. For property claims, policy deductibles and coverage sub-limits are factored into the settlement calculation.",
+    "page_approx": 3,
+    "summary": "The CLAIMS INVESTIGATION section outlines the process where adjusters verify coverage, establish liability, and assess losses through activities like inspections and interviews, documenting findings to determine insurer obligations using comparative negligence rules, deductibles, and coverage limits.",
+    "topics": [],
+    "path": [
+      "Claims Management",
+      "Claims Processing",
+      "Investigation and Verification"
+    ],
+    "keywords": [
+      "Claims Investigation",
+      "Coverage Verification",
+      "Liability Assessment",
+      "Documentation"
+    ]
+  },
+  {
+    "chunk_id": "chunk_0006",
+    "doc_id": "doc_001",
+    "filename": "claims_processing.txt",
+    "heading": "SUBROGATION",
+    "text": "Subrogation Process\n\nAfter settling a claim, the insurer may pursue recovery from third parties responsible for the loss. The subrogation team identifies recovery opportunities, engages legal counsel where necessary, and tracks recovery proceeds against the original claim payment.",
+    "page_approx": 6,
+    "summary": "The subrogation process involves the insurer seeking reimbursement from third parties responsible for a loss after settling a claim, using legal counsel and tracking recovery against the claim payment.",
+    "topics": [],
+    "path": [
+      "Operations",
+      "Claims Management",
+      "Subrogation"
+    ],
+    "keywords": [
+      "Subrogation",
+      "Third-party recovery",
+      "Claim settlement reimbursement",
+      "Legal counsel"
+    ]
+  },
+  {
+    "chunk_id": "chunk_0008",
+    "doc_id": "doc_002",
+    "filename": "customer_onboarding.txt",
+    "heading": "CUSTOMER KYC",
+    "text": "KYC Requirements\n\nAll new customers must be verified against government-issued identity documents. KYC checks include identity verification, sanctions screening, politically exposed person (PEP) checks, and adverse media screening. Enhanced due diligence applies to high-risk customer segments including high net worth individuals and commercial customers above defined revenue thresholds.\n\nDigital Identity Verification\n\nThe company employs an automated digital identity verification platform that validates identity documents using optical character recognition (OCR) and liveness detection. Results are returned within seconds, enabling real-time onboarding decisions for standard customers.",
+    "page_approx": 2,
+    "summary": "The section outlines mandatory KYC procedures for onboarding new customers, including identity verification, risk screenings, and enhanced due diligence for high-risk segments, leveraging an automated digital platform for real-time identity validation.",
+    "topics": [],
+    "path": [
+      "Compliance",
+      "Know Your Customer",
+      "Identity Verification and Risk Screening",
+      "Real-Time Identity Validation Platform"
+    ],
+    "keywords": [
+      "Identity verification",
+      "Risk screening",
+      "Enhanced due diligence",
+      "Automated onboarding platform"
+    ]
+  }
+]
