@@ -1,0 +1,66 @@
+[
+  {
+    "chunk_id": "chunk_0002",
+    "doc_id": "doc_001",
+    "filename": "product_catalog.txt",
+    "heading": "PERSONAL LINES PRODUCTS",
+    "text": "Motor Insurance\n\nThe motor insurance product range covers private passenger vehicles, motorcycles, and light commercial vehicles. Coverage options include third-party liability, comprehensive, and collision. Key product features include accident forgiveness, new-for-old replacement for vehicles under three years, and roadside assistance.\n\nHome and Contents Insurance\n\nThe home insurance product provides building and contents coverage for owner-occupiers and landlords. Coverage extensions include accidental damage, legal expenses, and home emergency assistance. Sum insured adequacy tools are integrated into the digital sales journey.",
+    "page_approx": 2,
+    "summary": "The \"Personal Lines Products\" section of the catalog outlines offerings for motor insurance, including extensive coverage options and accident-related benefits, as well as home and contents insurance providing comprehensive protections with added features like accidental damage and emergency assistance.",
+    "topics": [],
+    "path": [
+      "Operations",
+      "Product Management",
+      "Personal Lines",
+      "Personal Lines Products"
+    ],
+    "keywords": [
+      "Motor Insurance",
+      "Home and Contents Insurance",
+      "Accidental Damage",
+      "Emergency Assistance"
+    ]
+  },
+  {
+    "chunk_id": "chunk_0001",
+    "doc_id": "doc_001",
+    "filename": "product_catalog.txt",
+    "heading": "INSURANCE PRODUCT CATALOG",
+    "text": "Introduction\n\nThis document provides an overview of the company's insurance product portfolio, including product lines, coverage structures, and target market segments.",
+    "page_approx": 1,
+    "summary": "The \"INSURANCE PRODUCT CATALOG\" outlines the company's insurance offerings, detailing product lines, coverage options, and intended market segments.",
+    "topics": [],
+    "path": [
+      "Operations",
+      "Product Management",
+      "Insurance Product Catalog"
+    ],
+    "keywords": [
+      "Product Catalog",
+      "Insurance Offerings",
+      "Product Lines",
+      "Market Segments"
+    ]
+  },
+  {
+    "chunk_id": "chunk_0003",
+    "doc_id": "doc_001",
+    "filename": "product_catalog.txt",
+    "heading": "COMMERCIAL LINES PRODUCTS",
+    "text": "Commercial Property Insurance\n\nCommercial property products cover buildings, plant, machinery, and stock for businesses ranging from small retailers to large industrial operations. Policy structures include standard perils, all-risks, and business interruption extensions.\n\nProduct Development Process\n\nNew products and product modifications follow a structured development process including market research, actuarial pricing, regulatory review, and systems implementation. Product approval requires sign-off from the Chief Underwriting Officer and Legal & Compliance teams.",
+    "page_approx": 3,
+    "summary": "The document outlines commercial property insurance products, covering assets like buildings and stock with options for standard perils or specialized extensions, and details a structured development process involving market research, pricing, regulation, and executive approvals.",
+    "topics": [],
+    "path": [
+      "Product Management",
+      "Commercial Property Insurance",
+      "Product Development & Approval"
+    ],
+    "keywords": [
+      "Commercial Property",
+      "Product Development",
+      "Pricing",
+      "Regulatory Compliance"
+    ]
+  }
+]

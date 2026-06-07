@@ -1,0 +1,33 @@
+REGULATORY AND COMPLIANCE GUIDELINES
+
+Overview
+
+Insurance is a heavily regulated industry. This document summarises the key regulatory frameworks applicable to the company's operations and the internal compliance programme designed to ensure adherence.
+
+REGULATORY FRAMEWORK
+
+Key Regulatory Bodies
+
+The company operates under the oversight of state insurance departments in each jurisdiction where it writes business. Federal oversight applies to certain aspects of employee benefit plans under ERISA. International operations are subject to local regulatory regimes.
+
+Solvency and Capital Requirements
+
+The company is required to maintain minimum capital and surplus levels as defined by regulatory authorities. Internal capital models are used to assess economic capital requirements in excess of regulatory minimums. Solvency results are reported quarterly to the board and annually to regulators.
+
+COMPLIANCE PROGRAMME
+
+Compliance Monitoring
+
+The compliance function conducts ongoing monitoring of business processes against regulatory requirements and internal policies. Monitoring activities include transaction testing, policy file reviews, and mystery shopping of sales and service channels.
+
+Regulatory Reporting
+
+The company files a comprehensive suite of regulatory reports including annual statutory financial statements, quarterly financial data calls, and ad hoc market conduct filings. Regulatory reporting deadlines are tracked in the compliance calendar and reviewed monthly.
+
+CONSUMER PROTECTION
+
+Consumer protection regulations require fair treatment of customers across the policy lifecycle including transparent product disclosure, fair claims handling, and accessible dispute resolution processes. The company maintains a dedicated customer relations team to handle complaints and regulatory inquiries.
+
+Data Privacy and Security
+
+The company complies with applicable data privacy regulations including state consumer privacy laws. A formal data governance programme governs data collection, retention, access controls, and breach response. Annual privacy training is mandatory for all employees handling customer data.

@@ -1,0 +1,35 @@
+POLICY LIFECYCLE MANAGEMENT
+
+Introduction
+
+This document outlines the end-to-end lifecycle of an insurance policy from initial application through renewal and termination. Effective policy lifecycle management is critical to maintaining profitability, customer satisfaction, and regulatory compliance.
+
+POLICY ORIGINATION
+
+Policy origination encompasses the activities required to bring a new policy into force. This begins when a prospective customer submits an application, either through an agent, broker, or digital self-service portal. The origination team collects applicant information including personal details, risk exposure, and prior coverage history.
+
+Underwriting Rules
+
+Underwriting rules define the criteria by which an application is accepted, modified, or declined. Rules are calibrated to the company's risk appetite and updated quarterly based on loss experience. Key underwriting factors include applicant age, prior claims history, geographic location, and asset value. Automated underwriting engines process the majority of standard applications within minutes, while complex or high-value policies are routed to senior underwriters for manual review.
+
+Policy Issuance
+
+Upon underwriting approval, the policy document is generated and issued to the policyholder. The issuance process includes premium calculation, payment schedule setup, and document delivery. All issued policies are registered in the core policy administration system with a unique policy number and effective date.
+
+POLICY RENEWAL
+
+Policy Renewal Process
+
+Renewal notices are generated automatically 60 days before policy expiration. The renewal workflow re-evaluates risk factors, adjusts premiums based on updated loss models, and applies any mandatory regulatory changes. Policyholders who have had claims during the policy period are subject to enhanced review.
+
+Renewal Retention Strategies
+
+The retention team employs multiple strategies to minimise lapse rates at renewal. These include loyalty discounts, bundling incentives, and proactive outreach to at-risk policyholders. Analytics models identify customers with high lapse probability based on payment behaviour, engagement scores, and competitor pricing signals.
+
+POLICY AMENDMENTS AND ENDORSEMENTS
+
+Mid-term amendments allow policyholders to modify coverage, add endorsements, or change payment methods. All amendments trigger a re-rating process and generate a revised premium statement. Endorsements are tracked as addenda to the original policy record.
+
+POLICY TERMINATION
+
+Policies may be terminated by the insurer for non-payment, material misrepresentation, or at the policyholder's request. The termination process includes calculation of any unearned premium refund, notification to lienholders, and update of the policy administration system. Terminated policies are archived and retained per regulatory requirements.
