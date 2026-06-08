@@ -31,34 +31,33 @@ import sys
 import psycopg2
 import psycopg2.extras
 from openai import AzureOpenAI
-from sentence_transformers import SentenceTransformer
 from dotenv import load_dotenv
 load_dotenv()
 # ── Azure config ───────────────────────────────────────────────────────────────
-AZURE_ENDPOINT       = os.getenv("AZURE_OPENAI_ENDPOINT",  "https://bfsi-genai-demo.openai.azure.com")
-AZURE_OPENAI_API_KEY = os.getenv("AZURE_OPENAI_API_KEY",   "")
-AZURE_API_VERSION    = os.getenv("AZURE_API_VERSION",      "2024-05-01-preview")
-AZURE_MODEL          = os.getenv("AZURE_OPENAI_MODEL",     "bfsi-genai-demo-gpt-4o")
+AZURE_ENDPOINT       = os.getenv("AZURE_OPENAI_ENDPOINT")
+AZURE_OPENAI_API_KEY = os.getenv("AZURE_OPENAI_API_KEY")
+AZURE_API_VERSION    = os.getenv("AZURE_API_VERSION")
+AZURE_MODEL          = os.getenv("AZURE_OPENAI_MODEL")
 
 # ── DB config ──────────────────────────────────────────────────────────────────
 DB_CONFIG = {
-    "dbname":   os.getenv("DB_NAME",     "ECF"),
-    "user":     os.getenv("DB_USER",     "postgres"),
-    "password": os.getenv("DB_PASSWORD", "admin"),
-    "host":     os.getenv("DB_HOST",     "localhost"),
-    "port":     os.getenv("DB_PORT",     "5432"),
+    "dbname":   os.getenv("DB_NAME"),
+    "user":     os.getenv("DB_USER"),
+    "password": os.getenv("DB_PASSWORD"),
+    "host":     os.getenv("DB_HOST"),
+    "port":     os.getenv("DB_PORT"),
 }
 
 # ── Embedding model ────────────────────────────────────────────────────────────
-EMBEDDING_MODEL  = "sentence-transformers/all-MiniLM-L6-v2"
-SEMANTIC_TOP_K   = 5          # how many nodes to return in semantic mode
+# EMBEDDING_MODEL  = "sentence-transformers/all-MiniLM-L6-v2"
+# SEMANTIC_TOP_K   = 5          # how many nodes to return in semantic mode
 _embedding_model = None
 
-def _get_embedding_model() -> SentenceTransformer:
-    global _embedding_model
-    if _embedding_model is None:
-        _embedding_model = SentenceTransformer(EMBEDDING_MODEL)
-    return _embedding_model
+# def _get_embedding_model() -> SentenceTransformer:
+#     global _embedding_model
+#     if _embedding_model is None:
+#         _embedding_model = SentenceTransformer(EMBEDDING_MODEL)
+#     return _embedding_model
 
 # ── Safety: block all write operations ────────────────────────────────────────
 _BLOCKED = re.compile(
@@ -100,12 +99,36 @@ TABLE node_embeddings
   embedding vector(384)            -- do NOT query this column directly
 
 USEFUL PATTERNS:
-  SELECT * FROM nodes WHERE path_string LIKE 'Operations > Claims%';
-  SELECT c.heading, c.text, c.filename FROM chunks c
-    JOIN nodes n ON c.node_id = n.id WHERE n.title ILIKE '%fraud%';
+  -- Search by topic area (use node summary or path, not just title):
+  SELECT n.title, n.summary, n.path_string FROM nodes
+    WHERE n.summary ILIKE '%claims%' OR n.path_string ILIKE '%claims%' LIMIT 20;
+
+  -- Search chunk content for a concept:
+  SELECT c.heading, c.text, c.filename, c.summary FROM chunks c
+    JOIN nodes n ON c.node_id = n.id
+    WHERE c.text ILIKE '%claims investigation%'
+       OR c.summary ILIKE '%claims investigation%'
+       OR c.heading ILIKE '%claims%'
+    LIMIT 20;
+
+  -- Broad search across nodes AND chunks for a topic:
+  SELECT n.title, n.path_string, c.heading, c.text FROM chunks c
+    JOIN nodes n ON c.node_id = n.id
+    WHERE c.text ILIKE '%fraud%' OR n.summary ILIKE '%fraud%'
+    LIMIT 20;
+
+  -- Children of a node:
   SELECT * FROM nodes WHERE parent_id =
-    (SELECT id FROM nodes WHERE title = 'Operations' LIMIT 1);
+    (SELECT id FROM nodes WHERE title ILIKE '%Operations%' LIMIT 1);
+
+  -- Root nodes only:
   SELECT * FROM nodes WHERE depth = 0;
+
+IMPORTANT:
+  - For process/concept questions ("how is X done"), search c.text and c.summary — not just n.title.
+  - Always search both nodes and chunks when looking for a concept.
+  - Use OR across multiple fields (title, summary, path_string, c.text, c.heading) for better coverage.
+  - If searching for a multi-word concept, also try searching individual keywords.
 
 RULES:
   - Only SELECT statements. Never INSERT, UPDATE, DELETE, DROP, or TRUNCATE.
@@ -117,13 +140,12 @@ RULES:
 # ── System prompts ─────────────────────────────────────────────────────────────
 SYSTEM_INTENT = """You are a query router.
 Classify the user question as exactly one of:
-  "semantic"  — the question is about meaning, concepts, or topics
-                e.g. "how is fraud investigated?", "what covers onboarding?"
+
   "keyword"   — the question is structural, asks for lists, filters, or exact matches
                 e.g. "show all sub-topics", "which nodes are under Operations?",
                      "what documents mention claims?"
 
-Reply with ONLY the single word: semantic  OR  keyword
+Reply with ONLY the single word:   keyword
 No punctuation. No explanation."""
 
 SYSTEM_SQL = f"""You are a PostgreSQL expert and insurance domain assistant.
@@ -231,66 +253,66 @@ def _keyword_query(question: str, history: list[dict] | None) -> tuple[list[dict
 
 # ── SEMANTIC path ──────────────────────────────────────────────────────────────
 
-def _semantic_query(question: str) -> tuple[list[dict], str]:
-    """
-    Embed question → cosine similarity vs node_embeddings
-    → fetch top-K nodes + their chunks → return (rows, sql_description).
-    """
-    model  = _get_embedding_model()
-    vector = model.encode([question])[0].tolist()
-    vector_str = "[" + ",".join(f"{v:.6f}" for v in vector) + "]"
+# def _semantic_query(question: str) -> tuple[list[dict], str]:
+#     """
+#     Embed question → cosine similarity vs node_embeddings
+#     → fetch top-K nodes + their chunks → return (rows, sql_description).
+#     """
+#     # model  = _get_embedding_model()
+#     # vector = model.encode([question])[0].tolist()
+#     # vector_str = "[" + ",".join(f"{v:.6f}" for v in vector) + "]"
 
-    sql = f"""
-SELECT
-    n.id,
-    n.title,
-    n.path_string,
-    n.summary        AS node_summary,
-    n.keywords,
-    n.source_docs,
-    1 - (ne.embedding <=> '{vector_str}'::vector) AS similarity_score,
-    c.heading        AS chunk_heading,
-    c.text           AS chunk_text,
-    c.filename       AS chunk_filename,
-    c.page_approx
-FROM node_embeddings ne
-JOIN nodes  n ON ne.node_id = n.id
-JOIN chunks c ON c.node_id  = n.id
-ORDER BY ne.embedding <=> '{vector_str}'::vector
-LIMIT {SEMANTIC_TOP_K * 3}
-""".strip()
-    # LIMIT * 3 because multiple chunks per node — we want top-K nodes, not rows
+#     sql = f"""
+# SELECT
+#     n.id,
+#     n.title,
+#     n.path_string,
+#     n.summary        AS node_summary,
+#     n.keywords,
+#     n.source_docs,
+#     1 - (ne.embedding <=> '{vector_str}'::vector) AS similarity_score,
+#     c.heading        AS chunk_heading,
+#     c.text           AS chunk_text,
+#     c.filename       AS chunk_filename,
+#     c.page_approx
+# FROM node_embeddings ne
+# JOIN nodes  n ON ne.node_id = n.id
+# JOIN chunks c ON c.node_id  = n.id
+# ORDER BY ne.embedding <=> '{vector_str}'::vector
+# LIMIT {SEMANTIC_TOP_K * 3}
+# """.strip()
+#     # LIMIT * 3 because multiple chunks per node — we want top-K nodes, not rows
 
-    rows, error = _execute_sql(sql)
-    if error:
-        return [], sql, error
+#     rows, error = _execute_sql(sql)
+#     if error:
+#         return [], sql, error
 
-    # Deduplicate to top-K unique nodes, keeping all their chunks
-    seen_nodes = {}
-    for row in rows:
-        nid = row["id"]
-        if nid not in seen_nodes:
-            if len(seen_nodes) >= SEMANTIC_TOP_K:
-                continue
-            seen_nodes[nid] = {
-                "id":               row["id"],
-                "title":            row["title"],
-                "path_string":      row["path_string"],
-                "node_summary":     row["node_summary"],
-                "keywords":         row["keywords"],
-                "source_docs":      row["source_docs"],
-                "similarity_score": round(float(row["similarity_score"]), 4),
-                "chunks": [],
-            }
-        seen_nodes[nid]["chunks"].append({
-            "heading":    row["chunk_heading"],
-            "text":       row["chunk_text"],
-            "filename":   row["chunk_filename"],
-            "page_approx":row["page_approx"],
-        })
+#     # Deduplicate to top-K unique nodes, keeping all their chunks
+#     seen_nodes = {}
+#     for row in rows:
+#         nid = row["id"]
+#         if nid not in seen_nodes:
+#             if len(seen_nodes) >= SEMANTIC_TOP_K:
+#                 continue
+#             seen_nodes[nid] = {
+#                 "id":               row["id"],
+#                 "title":            row["title"],
+#                 "path_string":      row["path_string"],
+#                 "node_summary":     row["node_summary"],
+#                 "keywords":         row["keywords"],
+#                 "source_docs":      row["source_docs"],
+#                 "similarity_score": round(float(row["similarity_score"]), 4),
+#                 "chunks": [],
+#             }
+#         seen_nodes[nid]["chunks"].append({
+#             "heading":    row["chunk_heading"],
+#             "text":       row["chunk_text"],
+#             "filename":   row["chunk_filename"],
+#             "page_approx":row["page_approx"],
+#         })
 
-    structured_rows = list(seen_nodes.values())
-    return structured_rows, sql, None
+#     structured_rows = list(seen_nodes.values())
+#     return structured_rows, sql, None
 
 
 # ── Answer generation ──────────────────────────────────────────────────────────
@@ -336,7 +358,7 @@ def run_agent(
     Returns:
         {
           "question": str,
-          "mode":     str,       # "semantic" or "keyword"
+          "mode":     str,       #  "keyword"
           "sql":      str,       # query that ran (or attempted)
           "rows":     list,      # raw results
           "answer":   str,       # plain language answer
@@ -354,7 +376,7 @@ def run_agent(
 
     # Step 1 — detect intent
     try:
-        mode = _detect_intent(question)
+        mode = "keyword"
         result["mode"] = mode
     except Exception as e:
         # Default to keyword on detection failure
@@ -363,10 +385,10 @@ def run_agent(
 
     # Step 2 — query
     try:
-        if mode == "semantic":
-            rows, sql, error = _semantic_query(question)
-        else:
-            rows, sql, error = _keyword_query(question, history)
+        # if mode == "semantic":
+        #     rows, sql, error = _semantic_query(question)
+        # else:
+        rows, sql, error = _keyword_query(question, history)
 
         result["sql"]   = sql
         result["rows"]  = rows

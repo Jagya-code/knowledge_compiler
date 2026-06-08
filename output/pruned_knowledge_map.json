@@ -1,192 +1,22 @@
 [
   {
-    "title": "Compliance",
-    "node_id": "0017",
-    "depth": 0,
-    "start_index": 1,
-    "end_index": 4,
-    "summary": "Compliance ensures adherence to applicable regulations and internal policies through continuous Monitoring & Assurance (including mystery shopping) and a calendar-driven compliance program yielding timely, auditable disclosures. It enforces consumer protection, data privacy, and robust data governance with mandatory privacy training, plus a fully automated KYC/AML onboarding framework with real-time identity verification and ongoing due diligence, all while aligning with multi-layer regulatory oversight, internal solvency/capital models, and periodic regulator reporting to demonstrate financial resilience and ongoing compliance.",
-    "keywords": [
-      "Regulatory Adherence",
-      "Monitoring",
-      "Privacy training",
-      "Onboarding Process",
-      "Dispute resolution",
-      "Digital Onboarding",
-      "Data privacy",
-      "Regulatory Frameworks",
-      "Know Your Customer",
-      "Risk screening",
-      "Mystery Shopping",
-      "Regulatory Reporting",
-      "Internal Compliance Program",
-      "Identity verification",
-      "Automated onboarding platform",
-      "Consumer protection",
-      "Solvency",
-      "Enhanced due diligence",
-      "Capital Requirements",
-      "Regulatory Oversight",
-      "Internal Models",
-      "Compliance Calendar",
-      "Insurance Regulations",
-      "Identity Verification"
-    ],
-    "source_docs": [
-      "regulatory_compliance.txt",
-      "customer_onboarding.txt"
-    ],
-    "chunk_ids": [
-      "chunk_0026",
-      "chunk_0027",
-      "chunk_0007",
-      "chunk_0025",
-      "chunk_0028",
-      "chunk_0008"
-    ],
-    "user_defined": true,
-    "guidance_context": {
-      "matched_label": "Compliance",
-      "topic_description": "Compliance encompasses key regulatory and governance processes within insurance operations."
-    },
-    "nodes": [
-      {
-        "title": "Customer Onboarding",
-        "node_id": "0009",
-        "depth": 1,
-        "start_index": 1,
-        "end_index": 1,
-        "summary": "Implementing a Know Your Customer framework for insurance onboarding harmonizes regulatory requirements with robust identity verification and KYC controls to establish verifiable customer profiles from day one. It enables digital onboarding with streamlined verification, enhanced data quality, and ongoing due diligence, while upholding privacy protections and AML/CFT compliance.",
-        "keywords": [
-          "Digital Onboarding",
-          "Onboarding Process",
-          "Know Your Customer",
-          "Identity Verification"
-        ],
-        "source_docs": [
-          "customer_onboarding.txt"
-        ],
-        "chunk_ids": [
-          "chunk_0007"
-        ],
-        "user_defined": true,
-        "guidance_context": {
-          "matched_label": "Customer Onboarding",
-          "sub_topic_description": "",
-          "parent_topic_name": "Customer Management",
-          "parent_topic_description": "Customer Management handles onboarding, KYC, and customer data processes."
-        },
-        "nodes": []
-      },
-      {
-        "title": "Regulatory Framework",
-        "node_id": "0016",
-        "depth": 1,
-        "start_index": 1,
-        "end_index": 2,
-        "summary": "The section outlines the regulatory frameworks governing the insurance industry and the company\u2019s internal compliance program to ensure ongoing adherence. Oversight is multi-layered\u2014state, federal, and international regulators\u2014with jurisdiction-specific requirements for solvency, capital, governance, and market conduct; the company uses internal models to monitor solvency and capital adequacy and conducts periodic reporting to regulators and stakeholders to demonstrate financial resilience and regulatory compliance.",
-        "keywords": [
-          "Regulatory Adherence",
-          "Regulatory Oversight",
-          "Capital Requirements",
-          "Internal Models",
-          "Internal Compliance Program",
-          "Solvency",
-          "Insurance Regulations",
-          "Regulatory Frameworks"
-        ],
-        "source_docs": [
-          "regulatory_compliance.txt"
-        ],
-        "chunk_ids": [
-          "chunk_0025",
-          "chunk_0026"
-        ],
-        "user_defined": true,
-        "guidance_context": {
-          "matched_label": "Regulatory Framework",
-          "sub_topic_description": "",
-          "parent_topic_name": "Compliance",
-          "parent_topic_description": "Compliance encompasses key regulatory and governance processes within insurance operations."
-        },
-        "nodes": []
-      }
-    ]
-  },
-  {
     "title": "Operations",
-    "node_id": "0044",
+    "node_id": "0004",
     "depth": 0,
-    "start_index": 1,
-    "end_index": 6,
-    "summary": "Claims management delivers end-to-end processing from FNOL through coverage verification, triage and adjuster assignment, analytics-driven SIU investigations, a defined settlement workflow with supervisory approvals and compliant payments, and post-settlement subrogation and closure with ongoing reserve monitoring. Onboarding centers on a centralized CRM with secure API-sharing to policy and claims platforms, enforceable data governance, ongoing quality checks, and a five-step digital onboarding flow to optimize the first-year experience. Analytics provides fraud oversight via real-time dashboards and monthly loss/recovery reporting, while policy lifecycle management optimizes applications, renewals, and terminations with governance, automation, refunds rules, lienholder notifications, and regulatory archival.",
+    "start_index": 4,
+    "end_index": 4,
+    "summary": "In claims management, the Special Investigations Unit uses detailed investigations and advanced analytical and forensic tools to identify and deter fraud in flagged claims. It partners with law enforcement for fraud prosecutions while enforcing rigorous case management and regulatory tracking to ensure compliant, auditable outcomes.",
     "keywords": [
-      "Customer Experience",
-      "Claim settlement reimbursement",
-      "Coverage Verification",
-      "Documentation",
-      "Onboarding Process",
-      "First-Year Experience",
-      "fraud losses",
-      "Compliance",
-      "Refund Calculation",
-      "Claims Investigation",
-      "Liability Assessment",
-      "real-time dashboards",
-      "Data storage",
-      "Welcome Communications",
-      "Claims investigations",
-      "claims intake",
-      "Policy Origination",
-      "recovery rates",
-      "Payment Timelines",
-      "adjuster assignment",
-      "Supervisory Approval",
-      "Renewals",
-      "monthly reporting",
-      "Audit & Reserve Monitoring",
-      "Subrogation",
-      "Archiving & Compliance",
-      "First Notice of Loss",
-      "API-based sharing",
-      "Regulatory compliance",
-      "Payment Methods",
-      "Payments Finalization",
-      "Termination",
-      "Third-party recovery",
-      "Special Investigations Unit",
-      "Lienholder Notification",
-      "Data quality",
-      "Case Closure",
-      "Legal counsel",
-      "Prosecution collaboration",
-      "Policy Termination",
-      "Reopened Claims Tracking",
-      "CRM",
-      "Claims Closure",
-      "triage and routing",
-      "Digital Onboarding",
-      "Settlement"
+      "Case Management",
+      "Law Enforcement Collaboration",
+      "Regulatory Tracking",
+      "Fraud Investigations"
     ],
     "source_docs": [
-      "claims_processing.txt",
-      "customer_onboarding.txt",
-      "fraud_detection.txt",
-      "policy_lifecycle.txt"
+      "fraud_detection.txt"
     ],
     "chunk_ids": [
-      "chunk_0001",
-      "chunk_0021",
-      "chunk_0017",
-      "chunk_0005",
-      "chunk_0002",
-      "chunk_0016",
-      "chunk_0004",
-      "chunk_0003",
-      "chunk_0014",
-      "chunk_0009",
-      "chunk_0010",
-      "chunk_0006"
+      "chunk_0004"
     ],
     "user_defined": true,
     "guidance_context": {
@@ -198,51 +28,22 @@
     "nodes": [
       {
         "title": "Claims Management",
-        "node_id": "0030",
+        "node_id": "0003",
         "depth": 1,
-        "start_index": 1,
-        "end_index": 6,
-        "summary": "Claims Management starts with FNOL, capturing incident and policy data, verifying coverage, and triaging by severity, type, and complexity to assign to the appropriate adjuster with authority and reserves; SIUs conduct fraud investigations using analytics, surveillance, interviews, and digital forensics, coordinating with law enforcement as needed. The settlement workflow prescribes defined steps, required documentation, and supervisory approval for offers above thresholds, with payments issued via approved methods (EFT/ACH or checks) in compliance with state timelines. Subrogation seeks recovery from responsible third parties post-settlement, with legal counsel and recovery tracking, and closure finalizes the claim after all payments are made, while ongoing monitoring for audits, reserve adequacy, and management review of reopened claims occurs.",
+        "start_index": 4,
+        "end_index": 4,
+        "summary": "Within claims management, the Special Investigations Unit (SIU) reviews flagged claims through detailed investigations and advanced analytical and forensic tools to detect and deter fraud. It partners with law enforcement for fraud prosecution while maintaining stringent case management and regulatory tracking to ensure compliant, auditable outcomes.",
         "keywords": [
-          "Customer Experience",
-          "Claim settlement reimbursement",
-          "Coverage Verification",
-          "Documentation",
-          "Claims Investigation",
-          "Liability Assessment",
-          "Claims investigations",
-          "claims intake",
-          "Payment Timelines",
-          "adjuster assignment",
-          "Supervisory Approval",
-          "Audit & Reserve Monitoring",
-          "Subrogation",
-          "First Notice of Loss",
-          "Regulatory compliance",
-          "Payment Methods",
-          "Payments Finalization",
-          "Third-party recovery",
-          "Special Investigations Unit",
-          "Case Closure",
-          "Legal counsel",
-          "Prosecution collaboration",
-          "Reopened Claims Tracking",
-          "Claims Closure",
-          "triage and routing",
-          "Settlement"
+          "Case Management",
+          "Law Enforcement Collaboration",
+          "Regulatory Tracking",
+          "Fraud Investigations"
         ],
         "source_docs": [
-          "claims_processing.txt",
           "fraud_detection.txt"
         ],
         "chunk_ids": [
-          "chunk_0001",
-          "chunk_0005",
-          "chunk_0002",
-          "chunk_0004",
-          "chunk_0003",
-          "chunk_0014",
-          "chunk_0006"
+          "chunk_0004"
         ],
         "user_defined": true,
         "guidance_context": {
@@ -251,111 +52,65 @@
           "parent_topic_name": "Operations",
           "parent_topic_description": "Operations manages claims processing, settlement, fraud detection, and recovery activities."
         },
-        "nodes": [
-          {
-            "title": "Subrogation",
-            "node_id": "0029",
-            "depth": 2,
-            "start_index": 6,
-            "end_index": 6,
-            "summary": "The subrogation process involves the insurer seeking reimbursement from third parties responsible for a loss after settling a claim, using legal counsel and tracking recovery against the claim payment.",
-            "keywords": [
-              "Claim settlement reimbursement",
-              "Legal counsel",
-              "Subrogation",
-              "Third-party recovery"
-            ],
-            "source_docs": [
-              "claims_processing.txt"
-            ],
-            "chunk_ids": [
-              "chunk_0006"
-            ],
-            "user_defined": true,
-            "guidance_context": {
-              "matched_label": "Subrogation",
-              "sub_topic_description": "Supports recovery from liable third parties after claim settlement.",
-              "parent_topic_name": "Operations",
-              "parent_topic_description": "Operations manages claims processing, settlement, fraud detection, and recovery activities."
-            },
-            "nodes": []
-          }
-        ]
-      },
-      {
-        "title": "Customer Data Management",
-        "node_id": "0033",
-        "depth": 1,
-        "start_index": 3,
-        "end_index": 3,
-        "summary": "On onboarding, customer data is captured and stored in a centralized CRM. It is securely shared with policy and claims platforms through APIs to support underwriting, policy administration, and claims processing, while enforcing data governance. Ongoing data quality checks ensure accuracy, completeness, and integrity across the CRM and downstream systems.",
-        "keywords": [
-          "Data storage",
-          "Data quality",
-          "CRM",
-          "API-based sharing"
-        ],
-        "source_docs": [
-          "customer_onboarding.txt"
-        ],
-        "chunk_ids": [
-          "chunk_0009"
-        ],
-        "user_defined": true,
-        "guidance_context": {
-          "matched_label": "Customer Data Management",
-          "sub_topic_description": "Manages storage and protection of customer data.",
-          "parent_topic_name": "Customer Management",
-          "parent_topic_description": "Customer Management handles onboarding, KYC, and customer data processes."
-        },
         "nodes": []
-      },
-      {
-        "title": "Customer Onboarding",
-        "node_id": "0035",
-        "depth": 1,
-        "start_index": 4,
-        "end_index": 4,
-        "summary": "Insurance digital onboarding follows a five-step flow, with the average completion time used to monitor and improve efficiency. To boost the first-year experience, the framework recommends proactive engagement and welcome communication packs to ensure timely activation and ongoing customer touchpoints.",
-        "keywords": [
-          "Digital Onboarding",
-          "First-Year Experience",
-          "Welcome Communications",
-          "Onboarding Process"
-        ],
-        "source_docs": [
-          "customer_onboarding.txt"
-        ],
-        "chunk_ids": [
-          "chunk_0010"
-        ],
-        "user_defined": true,
-        "guidance_context": {
-          "matched_label": "Customer Onboarding",
-          "sub_topic_description": "",
-          "parent_topic_name": "Customer Management",
-          "parent_topic_description": "Customer Management handles onboarding, KYC, and customer data processes."
-        },
-        "nodes": []
-      },
+      }
+    ]
+  },
+  {
+    "title": "Policy Lifecycle",
+    "node_id": "0011",
+    "depth": 0,
+    "start_index": 1,
+    "end_index": 5,
+    "summary": "Policy lifecycle management covers the end-to-end handling of a policy\u2014from quote, underwriting, issuance, endorsements, and billing to renewals, cancellations, reinstatements, and post-issue servicing\u2014driving profitability through accurate pricing, efficient administration, controlled change management, and regulatory compliance via complete audit trails and data integrity. Policy origination begins with application intake, applies risk-rule-based underwriting to determine eligibility and pricing, and on approval issues a policy with calculated premiums, document delivery, and registration in the policy administration system to activate the lifecycle. Policy termination encompasses voluntary cancellations, insurer-initiated non-renewals or cancellations for cause, lapses, or misrepresentation/fraud, with defined refunds, notices to the insured and lienholders, and archiving of termination actions to satisfy retention and audit requirements.",
+    "keywords": [
+      "Application Submission",
+      "Compliance",
+      "Profitability",
+      "Termination Conditions",
+      "Regulatory Compliance",
+      "Lienholder Notifications",
+      "Policy Administration",
+      "Policy Lifecycle",
+      "Underwriting",
+      "Origination",
+      "Premium Calculation",
+      "Refund Calculations"
+    ],
+    "source_docs": [
+      "policy_lifecycle.txt"
+    ],
+    "chunk_ids": [
+      "chunk_0011",
+      "chunk_0007",
+      "chunk_0008"
+    ],
+    "user_defined": true,
+    "guidance_context": {
+      "matched_label": "Policy Lifecycle",
+      "sub_topic_description": "Covers onboarding journey and underwriting fraud prevention.",
+      "parent_topic_name": "Policy Lifecycle",
+      "parent_topic_description": "Policy Lifecycle covers underwriting, issuance, amendments, and termination processes."
+    },
+    "nodes": [
       {
         "title": "Policy Lifecycle",
-        "node_id": "0040",
-        "depth": 2,
+        "node_id": "0006",
+        "depth": 1,
         "start_index": 1,
         "end_index": 1,
-        "summary": "Policy lifecycle management centers on efficiently handling application, renewal, and termination processes across all lines, ensuring accurate data, timely underwriting, and compliant administration. By optimizing renewals and terminations, insurers improve profitability through better retention, pricing integrity, and lapse control while maintaining high customer satisfaction with seamless experiences. Robust governance, automation, and cross-functional controls throughout the lifecycle ensure regulatory compliance and audit readiness.",
+        "summary": "Policy lifecycle management encompasses the end-to-end handling of a policy\u2014from quote, underwriting, issuance, endorsements, and billing to renewals, cancellations, reinstatements, and post-issue servicing. A robust lifecycle framework drives profitability through accurate pricing, efficient policy administration, and controlled change management, while boosting customer satisfaction and ensuring regulatory compliance via complete audit trails and data integrity.",
         "keywords": [
-          "Policy Origination",
-          "Termination",
           "Compliance",
-          "Renewals"
+          "Origination",
+          "Profitability",
+          "Policy Lifecycle"
         ],
         "source_docs": [
           "policy_lifecycle.txt"
         ],
         "chunk_ids": [
-          "chunk_0017"
+          "chunk_0007"
         ],
         "user_defined": true,
         "guidance_context": {
@@ -367,23 +122,51 @@
         "nodes": []
       },
       {
-        "title": "Policy Termination",
-        "node_id": "0042",
+        "title": "Policy Issuance",
+        "node_id": "0007",
         "depth": 2,
-        "start_index": 5,
-        "end_index": 5,
-        "summary": "POLICY TERMINATION specifies the triggers and steps to terminate an insurance policy, including the rules for refund calculation (e.g., short-rate versus pro-rata) and the cancellation workflow. It also requires timely notification of lienholders, updating core systems to reflect termination, and compliant archival/retention of records per regulatory requirements.",
+        "start_index": 2,
+        "end_index": 2,
+        "summary": "The \"Policy Origination\" process involves initiating a new insurance policy through application submission, underwriting based on predefined rules aligned with risk tolerance, and policy issuance, including premium calculation, document delivery, and registration in the policy administration system.",
         "keywords": [
-          "Policy Termination",
-          "Lienholder Notification",
-          "Refund Calculation",
-          "Archiving & Compliance"
+          "Underwriting",
+          "Premium Calculation",
+          "Application Submission",
+          "Policy Administration"
         ],
         "source_docs": [
           "policy_lifecycle.txt"
         ],
         "chunk_ids": [
-          "chunk_0021"
+          "chunk_0008"
+        ],
+        "user_defined": true,
+        "guidance_context": {
+          "matched_label": "Policy Issuance",
+          "sub_topic_description": "Manages customer onboarding journey and policy issuance.",
+          "parent_topic_name": "Policy Lifecycle",
+          "parent_topic_description": "Policy Lifecycle covers underwriting, issuance, amendments, and termination processes."
+        },
+        "nodes": []
+      },
+      {
+        "title": "Policy Termination",
+        "node_id": "0010",
+        "depth": 1,
+        "start_index": 5,
+        "end_index": 5,
+        "summary": "Policy termination may occur for voluntary cancellation by the insured, insurer-initiated non-renewal or cancellation for cause, lapse, or material misrepresentation/fraud, in accordance with policy terms and applicable laws. The section prescribes the procedural steps\u2014determining refunds (short-rate or pro-rata as required), notifying the insured and any lienholders, and archiving termination actions to meet regulatory retention and audit requirements.",
+        "keywords": [
+          "Lienholder Notifications",
+          "Regulatory Compliance",
+          "Termination Conditions",
+          "Refund Calculations"
+        ],
+        "source_docs": [
+          "policy_lifecycle.txt"
+        ],
+        "chunk_ids": [
+          "chunk_0011"
         ],
         "user_defined": true,
         "guidance_context": {
@@ -392,77 +175,37 @@
           "parent_topic_name": "Policy Lifecycle",
           "parent_topic_description": "Policy Lifecycle covers underwriting, issuance, amendments, and termination processes."
         },
-        "nodes": []
+        "nodes": [
+          {
+            "title": "Policy Termination",
+            "node_id": "0009",
+            "depth": 2,
+            "start_index": 5,
+            "end_index": 5,
+            "summary": "The \"POLICY TERMINATION\" section outlines the conditions under which an insurance policy may be terminated, the procedural steps such as refund calculations, lienholder notifications, and archival, adhering to regulatory requirements.",
+            "keywords": [
+              "Lienholder Notifications",
+              "Regulatory Compliance",
+              "Termination Conditions",
+              "Refund Calculations"
+            ],
+            "source_docs": [
+              "policy_lifecycle.txt"
+            ],
+            "chunk_ids": [
+              "chunk_0011"
+            ],
+            "user_defined": true,
+            "guidance_context": {
+              "matched_label": "Policy Termination",
+              "sub_topic_description": "Handles policy termination and lifecycle completion.",
+              "parent_topic_name": "Policy Lifecycle",
+              "parent_topic_description": "Policy Lifecycle covers underwriting, issuance, amendments, and termination processes."
+            },
+            "nodes": []
+          }
+        ]
       }
     ]
-  },
-  {
-    "title": "Policy Lifecycle",
-    "node_id": "0050",
-    "depth": 0,
-    "start_index": 2,
-    "end_index": 4,
-    "summary": "Policy origination spans the creation of new policies from application through underwriting evaluation to issuance, with automated and manual steps allocated by risk factors and complexity. Policy administration handles mid-term amendments that modify coverage or payment methods, triggering re-rating and a revised premium statement with endorsements documented as addenda; the renewal process re-evaluates risk at expiration using updated exposure, claims history, and external factors to determine premium adjustments and renewal offers or non-renewals, supported by retention strategies such as loyalty discounts, streamlined renewals, and predictive analytics-driven proactive outreach.",
-    "keywords": [
-      "Premium Adjustment",
-      "Application Submission",
-      "Mid-term amendments",
-      "Policy Issuance",
-      "Retention Analytics",
-      "Re-rating",
-      "Addenda",
-      "Endorsements",
-      "Underwriting Evaluation",
-      "Policy Renewal",
-      "Risk Reassessment",
-      "Automated and Manual Procedures"
-    ],
-    "source_docs": [
-      "policy_lifecycle.txt"
-    ],
-    "chunk_ids": [
-      "chunk_0019",
-      "chunk_0020",
-      "chunk_0018"
-    ],
-    "user_defined": true,
-    "guidance_context": {
-      "matched_label": "Policy Lifecycle",
-      "sub_topic_description": "Covers onboarding journey and underwriting fraud prevention.",
-      "parent_topic_name": "Policy Lifecycle",
-      "parent_topic_description": "Policy Lifecycle covers underwriting, issuance, amendments, and termination processes."
-    },
-    "nodes": []
-  },
-  {
-    "title": "Product Management",
-    "node_id": "0055",
-    "depth": 0,
-    "start_index": 1,
-    "end_index": 3,
-    "summary": "Product management for commercial property insurance defines the coverage types and endorsements and enforces a formal development/modification lifecycle that requires cross-functional approvals from underwriting, actuarial, legal/compliance, product management, and distribution to ensure regulatory compliance, sound pricing, and market suitability. The Insurance Product Catalog serves as the reference for all offerings, detailing coverage frameworks, terms and exclusions, and mapping products to target market segments, underwriting criteria, and distribution channels to guide pricing, risk assessment, regulatory alignment, line management, and sales enablement.",
-    "keywords": [
-      "approval process",
-      "Product Lines",
-      "product development",
-      "Market Segments",
-      "commercial lines",
-      "compliance",
-      "Coverage Frameworks",
-      "Insurance Offerings"
-    ],
-    "source_docs": [
-      "product_catalog.txt"
-    ],
-    "chunk_ids": [
-      "chunk_0024",
-      "chunk_0022"
-    ],
-    "user_defined": true,
-    "guidance_context": {
-      "matched_label": "Product Management",
-      "topic_description": ""
-    },
-    "nodes": []
   }
 ]

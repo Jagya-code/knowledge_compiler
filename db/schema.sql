@@ -4,12 +4,12 @@
 -- ============================================================
 
 -- Enable pgvector extension for storing/querying embedding vectors
-CREATE EXTENSION IF NOT EXISTS vector;
+-- CREATE EXTENSION IF NOT EXISTS vector;
 
 -- ============================================================
 -- Drop tables if they exist (clean slate on re-run)
 -- ============================================================
-DROP TABLE IF EXISTS node_embeddings CASCADE;
+-- DROP TABLE IF EXISTS node_embeddings CASCADE;
 DROP TABLE IF EXISTS chunks CASCADE;
 DROP TABLE IF EXISTS nodes CASCADE;
 
@@ -75,21 +75,21 @@ CREATE INDEX idx_chunks_filename ON chunks (filename);
 -- Stores vector representations of node summaries.
 -- all-MiniLM-L6-v2 produces 384-dimensional vectors.
 -- ============================================================
-CREATE TABLE node_embeddings (
-    id         SERIAL PRIMARY KEY,
-    node_id    INT    NOT NULL REFERENCES nodes(id) ON DELETE CASCADE,
-    embedding  vector(384)                             -- sentence-transformers/all-MiniLM-L6-v2
-);
+-- CREATE TABLE node_embeddings (
+--     id         SERIAL PRIMARY KEY,
+--     node_id    INT    NOT NULL REFERENCES nodes(id) ON DELETE CASCADE,
+--     embedding  vector(384)                             -- sentence-transformers/all-MiniLM-L6-v2
+-- );
 
 -- IVFFlat index for fast approximate cosine similarity search
 -- lists=100 is a good default; tune based on row count
-CREATE INDEX idx_node_embeddings_vector
-    ON node_embeddings
-    USING ivfflat (embedding vector_cosine_ops)
-    WITH (lists = 100);
+-- CREATE INDEX idx_node_embeddings_vector
+--     ON node_embeddings
+--     USING ivfflat (embedding vector_cosine_ops)
+--     WITH (lists = 100);
 
 -- Index for direct node lookup
-CREATE UNIQUE INDEX idx_node_embeddings_node_id ON node_embeddings (node_id);
+-- CREATE UNIQUE INDEX idx_node_embeddings_node_id ON node_embeddings (node_id);
 
 
 -- ============================================================

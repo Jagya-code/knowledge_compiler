@@ -21,7 +21,7 @@ from pathlib import Path
 
 import psycopg2
 import psycopg2.extras
-from sentence_transformers import SentenceTransformer
+# from sentence_transformers import SentenceTransformer
 from dotenv import load_dotenv
 load_dotenv()
 
@@ -39,7 +39,7 @@ DB_CONFIG = {
 }
 
 # ── Embedding model ───────────────────────────────────────────────────────────
-EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
+# EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 BATCH_SIZE      = 64   # number of summaries to embed in one batch
 
 
@@ -242,49 +242,49 @@ def insert_chunks(conn, flat_nodes: list, chunks: list) -> None:
 
 # ── Step 5: Generate and store embeddings ─────────────────────────────────────
 
-def insert_embeddings(conn, flat_nodes: list) -> None:
-    """
-    Generate embeddings for every node summary using all-MiniLM-L6-v2,
-    then insert into node_embeddings table.
+# def insert_embeddings(conn, flat_nodes: list) -> None:
+#     """
+#     Generate embeddings for every node summary using all-MiniLM-L6-v2,
+#     then insert into node_embeddings table.
 
-    Processes in batches of BATCH_SIZE for efficiency.
-    Nodes with empty summaries get a zero-vector embedding.
-    """
-    print(f"  Loading embedding model: {EMBEDDING_MODEL} ...")
-    model = SentenceTransformer(EMBEDDING_MODEL)
+#     Processes in batches of BATCH_SIZE for efficiency.
+#     Nodes with empty summaries get a zero-vector embedding.
+#     """
+#     print(f"  Loading embedding model: {EMBEDDING_MODEL} ...")
+#     model = SentenceTransformer(EMBEDDING_MODEL)
 
-    cursor = conn.cursor()
+#     cursor = conn.cursor()
 
-    insert_sql = """
-        INSERT INTO node_embeddings (node_id, embedding)
-        VALUES (%s, %s)
-        ON CONFLICT (node_id) DO UPDATE SET embedding = EXCLUDED.embedding;
-    """
+#     insert_sql = """
+#         INSERT INTO node_embeddings (node_id, embedding)
+#         VALUES (%s, %s)
+#         ON CONFLICT (node_id) DO UPDATE SET embedding = EXCLUDED.embedding;
+#     """
 
-    # Collect (db_pk, summary) pairs
-    pairs = [(n["db_pk"], n["summary"] or n["title"]) for n in flat_nodes]
+#     # Collect (db_pk, summary) pairs
+#     pairs = [(n["db_pk"], n["summary"] or n["title"]) for n in flat_nodes]
 
-    print(f"  Generating embeddings for {len(pairs)} node(s) in batches of {BATCH_SIZE}...")
+#     print(f"  Generating embeddings for {len(pairs)} node(s) in batches of {BATCH_SIZE}...")
 
-    total = 0
-    for batch_start in range(0, len(pairs), BATCH_SIZE):
-        batch      = pairs[batch_start: batch_start + BATCH_SIZE]
-        db_pks     = [p[0] for p in batch]
-        summaries  = [p[1] for p in batch]
+#     total = 0
+#     for batch_start in range(0, len(pairs), BATCH_SIZE):
+#         batch      = pairs[batch_start: batch_start + BATCH_SIZE]
+#         db_pks     = [p[0] for p in batch]
+#         summaries  = [p[1] for p in batch]
 
-        vectors = model.encode(summaries, show_progress_bar=False)
+#         vectors = model.encode(summaries, show_progress_bar=False)
 
-        rows = [
-            (db_pks[i], vectors[i].tolist())
-            for i in range(len(batch))
-        ]
-        psycopg2.extras.execute_batch(cursor, insert_sql, rows)
-        total += len(batch)
-        print(f"    Embedded {total}/{len(pairs)} nodes...", end="\r")
+#         rows = [
+#             (db_pks[i], vectors[i].tolist())
+#             for i in range(len(batch))
+#         ]
+#         psycopg2.extras.execute_batch(cursor, insert_sql, rows)
+#         total += len(batch)
+#         print(f"    Embedded {total}/{len(pairs)} nodes...", end="\r")
 
-    conn.commit()
-    cursor.close()
-    print(f"\n  Inserted {total} embedding(s) into `node_embeddings`.")
+#     conn.commit()
+#     cursor.close()
+#     print(f"\n  Inserted {total} embedding(s) into `node_embeddings`.")
 
 
 # ── DB connection ─────────────────────────────────────────────────────────────
@@ -336,14 +336,14 @@ def run_loader(pruned_path: str = PRUNED_MAP_PATH, chunks_path: str = CHUNKS_PAT
     print("\n=== Step 4: Insert chunks ===")
     insert_chunks(conn, flat_nodes, chunks)
 
-    print("\n=== Step 5: Generate + Store embeddings ===")
-    insert_embeddings(conn, flat_nodes)
+    # print("\n=== Step 5: Generate + Store embeddings ===")
+    # insert_embeddings(conn, flat_nodes)
 
     conn.close()
     print("\n=== Loading complete ===")
-    print(f"  Nodes     : {len(flat_nodes)}")
-    print(f"  Chunks    : {sum(len(n.get('chunk_ids', [])) for n in flat_nodes)}")
-    print(f"  Embeddings: {len(flat_nodes)}")
+    print(f"  Nodes  : {len(flat_nodes)}")
+    print(f"  Chunks : {sum(len(n.get('chunk_ids', [])) for n in flat_nodes)}")
+    # print(f"  Embeddings: {len(flat_nodes)}")
 
 
 if __name__ == "__main__":
